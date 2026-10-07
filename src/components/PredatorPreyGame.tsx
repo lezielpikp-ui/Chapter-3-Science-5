@@ -101,10 +101,10 @@ export const PredatorPreyGame: React.FC<PredatorPreyGameProps> = ({
               soundFx.playClick();
               setActiveSubMode('classifier');
             }}
-            className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-colors ${
+            className={`px-3.5 py-1.5 text-xs font-bold rounded-lg cursor-pointer select-none transform transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 active:scale-95 ${
               activeSubMode === 'classifier'
-                ? 'bg-rose-800 text-white shadow-xs'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                ? 'bg-rose-800 text-white shadow-xs scale-[1.02]'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200 hover:shadow-xs'
             }`}
           >
             Role Classifier Challenge
@@ -114,10 +114,10 @@ export const PredatorPreyGame: React.FC<PredatorPreyGameProps> = ({
               soundFx.playClick();
               setActiveSubMode('adaptations');
             }}
-            className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-colors ${
+            className={`px-3.5 py-1.5 text-xs font-bold rounded-lg cursor-pointer select-none transform transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 active:scale-95 ${
               activeSubMode === 'adaptations'
-                ? 'bg-rose-800 text-white shadow-xs'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                ? 'bg-rose-800 text-white shadow-xs scale-[1.02]'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200 hover:shadow-xs'
             }`}
           >
             Predator vs Prey Clues & Adaptations

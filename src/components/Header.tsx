@@ -72,10 +72,10 @@ export const Header: React.FC<HeaderProps> = ({
                   soundFx.playClick();
                   setActiveTab(link.id);
                 }}
-                className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap ${
+                className={`px-3 py-1.5 text-xs font-semibold rounded-lg whitespace-nowrap cursor-pointer transform transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 active:translate-y-0 active:scale-95 ${
                   isActive
-                    ? 'bg-emerald-100/80 text-emerald-900 shadow-xs ring-1 ring-emerald-600/20'
-                    : 'text-slate-600 hover:text-emerald-900 hover:bg-slate-100/80'
+                    ? 'bg-emerald-100/90 text-emerald-950 shadow-xs ring-1 ring-emerald-600/30 font-bold scale-[1.02]'
+                    : 'text-slate-600 hover:text-emerald-950 hover:bg-slate-100/90 hover:shadow-xs'
                 }`}
               >
                 {link.label}
@@ -122,10 +122,10 @@ export const Header: React.FC<HeaderProps> = ({
                 soundFx.playClick();
                 setActiveTab(link.id);
               }}
-              className={`px-3 py-1 text-xs font-semibold rounded-lg transition-all whitespace-nowrap shrink-0 ${
+              className={`px-3 py-1.5 text-xs font-semibold rounded-lg whitespace-nowrap shrink-0 cursor-pointer transform transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 active:scale-95 ${
                 isActive
-                  ? 'bg-emerald-800 text-white shadow-xs'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'bg-emerald-800 text-white shadow-xs font-bold scale-[1.02]'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900'
               }`}
             >
               {link.label}

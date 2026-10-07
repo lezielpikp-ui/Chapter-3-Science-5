@@ -107,10 +107,10 @@ export const LearnZone: React.FC<LearnZoneProps> = ({
                 setActiveModule(m.id as typeof activeModule);
                 onObjectiveAchieved(m.objNum);
               }}
-              className={`text-left p-3.5 rounded-2xl border transition-all ${
+              className={`text-left p-3.5 rounded-2xl border cursor-pointer select-none transform transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.03] active:translate-y-0 active:scale-[0.98] ${
                 isActive
-                  ? 'bg-white border-emerald-600 shadow-md ring-2 ring-emerald-600/10'
-                  : 'bg-white/80 hover:bg-white border-slate-200 hover:border-emerald-300'
+                  ? 'bg-white border-emerald-600 shadow-md ring-2 ring-emerald-600/20 scale-[1.02]'
+                  : 'bg-white/90 hover:bg-white border-slate-200 hover:border-emerald-400 shadow-xs hover:shadow-md'
               }`}
             >
               <div className="flex items-center gap-2 mb-1.5">

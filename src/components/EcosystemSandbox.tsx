@@ -91,10 +91,10 @@ export const EcosystemSandbox: React.FC<EcosystemSandboxProps> = ({
               soundFx.playClick();
               setSandboxMode('guided');
             }}
-            className={`px-3.5 py-1.5 text-xs font-bold rounded-xl transition-colors ${
+            className={`px-3.5 py-1.5 text-xs font-bold rounded-xl cursor-pointer select-none transform transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 active:scale-95 ${
               sandboxMode === 'guided'
-                ? 'bg-emerald-800 text-white shadow-xs'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                ? 'bg-emerald-800 text-white shadow-xs scale-[1.02]'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200 hover:shadow-xs'
             }`}
           >
             Guided Mystery Scenarios
@@ -104,10 +104,10 @@ export const EcosystemSandbox: React.FC<EcosystemSandboxProps> = ({
               soundFx.playClick();
               setSandboxMode('free');
             }}
-            className={`px-3.5 py-1.5 text-xs font-bold rounded-xl transition-colors ${
+            className={`px-3.5 py-1.5 text-xs font-bold rounded-xl cursor-pointer select-none transform transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 active:scale-95 ${
               sandboxMode === 'free'
-                ? 'bg-emerald-800 text-white shadow-xs'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                ? 'bg-emerald-800 text-white shadow-xs scale-[1.02]'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200 hover:shadow-xs'
             }`}
           >
             Free Population Sandbox
@@ -143,10 +143,10 @@ export const EcosystemSandbox: React.FC<EcosystemSandboxProps> = ({
                     setIsDisruptionTriggered(false);
                     setSelectedAnswerIndex(null);
                   }}
-                  className={`px-3.5 py-2 text-xs font-bold rounded-xl transition-all whitespace-nowrap flex items-center gap-1.5 shrink-0 ${
+                  className={`px-3.5 py-2 text-xs font-bold rounded-xl whitespace-nowrap flex items-center gap-1.5 shrink-0 cursor-pointer select-none transform transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 active:scale-95 ${
                     isSelected
-                      ? 'bg-amber-500 text-amber-950 shadow-xs ring-2 ring-amber-500/20'
-                      : 'bg-white hover:bg-slate-50 border border-slate-200 text-slate-700'
+                      ? 'bg-amber-500 text-amber-950 shadow-xs ring-2 ring-amber-500/20 scale-[1.02]'
+                      : 'bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:shadow-xs'
                   }`}
                 >
                   <span>Case {idx + 1}</span>

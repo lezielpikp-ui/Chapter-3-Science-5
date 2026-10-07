@@ -154,10 +154,10 @@ export const ChainCrafterGame: React.FC<ChainCrafterGameProps> = ({
                   soundFx.playClick();
                   setCurrentChallengeIndex(idx);
                 }}
-                className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 whitespace-nowrap ${
+                className={`px-3 py-1.5 text-xs font-semibold rounded-lg cursor-pointer select-none transform transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 active:scale-95 flex items-center gap-1.5 whitespace-nowrap ${
                   isCurrent
-                    ? 'bg-emerald-800 text-white shadow-xs'
-                    : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
+                    ? 'bg-emerald-800 text-white shadow-xs scale-[1.02] font-bold'
+                    : 'bg-slate-100 hover:bg-slate-200 text-slate-700 hover:shadow-xs'
                 }`}
               >
                 <span>{ch.habitatName.split(' ')[0]}</span>

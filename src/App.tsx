@@ -12,6 +12,7 @@ import { PredatorPreyGame } from './components/PredatorPreyGame';
 import { PhotosynthesisLab } from './components/PhotosynthesisLab';
 import { EcosystemSandbox } from './components/EcosystemSandbox';
 import { MasteryQuiz } from './components/MasteryQuiz';
+import { GameModeSwitcher } from './components/GameModeSwitcher';
 import { Footer } from './components/Footer';
 import { ObjectiveProgress } from './types/ecosystem';
 import { soundFx } from './utils/audio';
@@ -112,6 +113,9 @@ export default function App() {
             </button>
           </div>
         )}
+
+        {/* Game Mode Cards Switcher with Hover Lift & Scale */}
+        <GameModeSwitcher activeTab={activeTab} setActiveTab={setActiveTab} />
 
         {/* Tab Router */}
         {activeTab === 'learn' && (
